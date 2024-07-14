@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Psikolog</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<header class="bg_color_header sticky">
+
+    <nav class="navbar py-md-3 bg-transparent w-100 d-lg-none d-block">
+        <div class="d-flex justify-content-between align-items-center">
+
+            <a class="navbar_item fw-bolder" href="index.html">
+                İSİM SOYİSİM
+            </a>
+            <button class="navbar-toggler me-4" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-list"
+                     viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                          d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                </svg>
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasDarkNavbar"
+                 aria-labelledby="offcanvasDarkNavbarLabel">
+
+                <div class="offcanvas-header flex-column ">
+                    <div class="d-flex w-100 mb-3 mt-1" data-bs-dismiss="offcanvas" aria-label="Close">
+                        <a class="navbar_item fw-bolder" href="index.html">
+                            İSİM SOYİSİM
+                        </a>
+                        <button type="button" class="btn-close btn-close-black mt-1 me-2" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                    </div>
+                </div>
+
+                <div class="offcanvas-body">
+
+                    <ul class="navbar-nav pe-3">
+                        <li class="nav-item w-100" data-bs-dismiss="offcanvas" aria-label="Close">
+
+                            <a class="nav-link" aria-current="page" href="#anasayfa">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                     class="bi bi-house" viewBox="0 0 16 16">
+                                    <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+                                </svg>
+                                Anasayfa
+                            </a>
+
+                            <a class="nav-link" aria-current="page" href="#hakkımda">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                     class="bi bi-person-video" viewBox="0 0 16 16">
+                                    <path d="M8 9.05a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
+                                    <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm10.798 11c-.453-1.27-1.76-3-4.798-3-3.037 0-4.345 1.73-4.798 3H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1z"/>
+                                </svg>
+                                Hakkımda
+                            </a>
+
+                            <a class="nav-link" aria-current="page" href="#terapi">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                     class="bi bi-people-fill" viewBox="0 0 16 16">
+                                    <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
+                                </svg>
+                                Terapi
+                            </a>
+
+                            <a class="nav-link" aria-current="page" href="#hizmetler">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                                     class="bi bi-clipboard2-pulse" viewBox="0 0 16 16">
+                                    <path d="M9.5 0a.5.5 0 0 1 .5.5.5.5 0 0 0 .5.5.5.5 0 0 1 .5.5V2a.5.5 0 0 1-.5.5h-5A.5.5 0 0 1 5 2v-.5a.5.5 0 0 1 .5-.5.5.5 0 0 0 .5-.5.5.5 0 0 1 .5-.5z"/>
+                                    <path d="M3 2.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 0 0-1h-.5A1.5 1.5 0 0 0 2 2.5v12A1.5 1.5 0 0 0 3.5 16h9a1.5 1.5 0 0 0 1.5-1.5v-12A1.5 1.5 0 0 0 12.5 1H12a.5.5 0 0 0 0 1h.5a.5.5 0 0 1 .5.5v12a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5z"/>
+                                    <path d="M9.979 5.356a.5.5 0 0 0-.968.04L7.92 10.49l-.94-3.135a.5.5 0 0 0-.926-.08L4.69 10H4.5a.5.5 0 0 0 0 1H5a.5.5 0 0 0 .447-.276l.936-1.873 1.138 3.793a.5.5 0 0 0 .968-.04L9.58 7.51l.94 3.135A.5.5 0 0 0 11 11h.5a.5.5 0 0 0 0-1h-.128z"/>
+                                </svg>
+                                Hizmetler
+                            </a>
+
+                            <a class="nav-link" aria-current="page" title="Blog" href="#blog">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                     class="bi bi-calendar-heart" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                          d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4zM1 14V4h14v10a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1m7-6.507c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"></path>
+                                </svg>
+                                Yazılarım
+                            </a>
+
+                            <a class="nav-link" aria-current="page" href="#iletisim">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                     class="bi bi-people-fill" viewBox="0 0 16 16">
+                                    <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
+                                </svg>
+                                İletişim
+                            </a>
+
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="d-none d-lg-block w-100 px-xl-5">
+        <nav class="d-flex  align-items-center justify-content-between px-xl-5 py-3">
+
+            <a class="navbar_item fw-bolder" href="index.html">
+                İSİM SOYİSİM
+            </a>
+
+            <ul class="navbar-nav justify-content-center gap-4 align-items-center me-4">
+                <li>
+                    <a class="navbar_item scale-up-center" href="#anasayfa">Anasayfa</a>
+                </li>
+                <li>
+                    <a class="navbar_item scale-up-center" href="#hakkımda">Hakkımda</a>
+                </li>
+                <li>
+                    <a class="navbar_item scale-up-center" href="#terapi">Terapi</a>
+                </li>
+                <li>
+                    <a class="navbar_item scale-up-center" href="#hizmetler">Hizmetler</a>
+                </li>
+                <li>
+                    <a class="navbar_item scale-up-center" href="#blog">Yazılarım</a>
+                </li>
+                <li>
+                    <a class="navbar_item scale-up-center" href="#iletisim">İletişim</a>
+                </li>
+            </ul>
+
+        </nav>
+
+
+    </div>
+
+</header>
+
+<section id="anasayfa" class="bg_color_header py-5 mt-5 text-white">
+    <div class="container py-5">
+        <div class="row align-items-center justify-content-evenly my-5 pt-3">
+            <div class="col-lg-7 text-section">
+
+                <h1>Daha iyi hissetmeye <span class="highlight">bugün</span> başlayın</h1>
+                <p class="text-section-p">Siz de 500 bin mutlu danışanımız gibi hayatınızın kontrolünü elinize alın.</p>
+
+                <div class="d-flex gap-5">
+                    <button class="btn button2 shadow-pop-tl">Terapiye Başlayın</button>
+                    <button class="btn button1 shadow-pop-tl">Terapiye Başlayın</button>
+                </div>
+
+            </div>
+
+            <div class="col-lg-5 image-section">
+                <img src="assets/home-trust-banner.jpeg" alt=".." class="img-fluid d-none d-lg-block">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="hakkımda" class="site-main py-5">
+    <section class="team-detail-section pt-3 mt-5 mx-md-5 mx-1">
+        <div class="pattern-overlay zigzag-patten "></div>
+        <div class="container ">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="author-img-wrapper">
+                        <figure class="team-fig">
+                            <img src="assets/1-Therapist.png" alt="" height="526">
+                        </figure>
+                        <div class="auther-quote">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor"
+                                 class="bi bi-quote" viewBox="0 0 16 16">
+                                <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
+                            </svg>
+                            <blockquote>
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
+                                    ullamcorper mattis, pulvinar dapibus leo."</p>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="author-bio-date">
+                        <div class="pattern-overlay c-patten"></div>
+                        <div class="title-divider"></div>
+                        <h2 class="author-name">
+                            Harrison Scott
+                        </h2>
+                        <div class="social-site-link">
+                            <ul>
+                                <li>
+                                    <a href="https://www.facebook.com/">
+                                        <i class="fab fa-facebook">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                 fill="currentColor"
+                                                 class="bi bi-facebook" viewBox="0 0 16 16">
+                                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                                            </svg>
+                                        </i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://instagram.com/?lang=en">
+                                        <i class="fab fa-facebook">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                 fill="currentColor"
+                                                 class="bi bi-instagram" viewBox="0 0 16 16">
+                                                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                                            </svg>
+                                        </i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.whatsapp.com/">
+                                        <i class="fab fa-whatsapp">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                 fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                                <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                                            </svg>
+                                        </i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.x.com/">
+                                        <i class="fab fa-instagram">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                 fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                                <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                                            </svg>
+                                        </i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.google.com/">
+                                        <i class="fab fa-pinterest">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                 fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
+                                                <path d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z"/>
+                                            </svg>
+                                        </i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="author-disc">
+                            <p>
+                                Quaerat expedita suspendisse asperiores repellendus saepe ultrices eget vitae facilisis
+                                cupidatat adipisicing? Potenti commodi gravida expedita taciti enim! Eaque! Ab laboris
+                                labore provident dis. Voluptatum dolore laboris consectetur tempore voluptatum.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, cons aring elit sed dllao the eimod sed dllao the eimod
+                                dolor sit am. Rem omnis placeat vulputate inventore maxime minus nec eimod sed dllao.
+                            </p>
+                        </div>
+                        <div class="qualification">
+                            <h4 class="qualification-title"> qualification :</h4>
+                            <div class="experience-detail">
+                                <h5 class="date"># 2013 / 2015</h5>
+                                <span>Harvey Mudd College (Civil Engineering) College of engineering, London</span>
+                            </div>
+                            <div class="experience-detail">
+                                <h5 class="date"># 2016 / 2018</h5>
+                                <span>Oxford College (Architech) engineering college, San Francicso</span>
+                            </div>
+                            <div class="experience-detail">
+                                <h5 class="date"># 2019 / 2020</h5>
+                                <span>CEO, Chief supervisor of Alfred Construction company</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="experience-info">
+                <h4 class="experience-heading">Experiences:</h4>
+                <p>
+                    Quaerat expedita suspendisse asperiores repellendus saepe ultrices eget vitae facilisis cupidatat
+                    adipisicing? Potenti commodi gravida expedita taciti enim! Eaque! Ab laboris labore provident dis.
+                    Voluptatum dolore laboris consectetur tempore voluptatum Potenti commodi gravida expedita taciti
+                    enim! Eaque! Ab laboris labore provident dis. Voluptatum dolore laboris consectetur tempore
+                    voluptatum dolore laboris consectetur tempore volupta.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, cons aring elit sed dllao the eimod sed dllao the eimod dolor sit am.
+                    Rem omnis placeat vulputate inventore maxime minus nec eimod sed dllao the eimod dolor minus nec
+                    eimod sed dllao the eimod .
+                </p>
+            </div>
+            <div class="experience-wrappered row">
+                <div class="pattern-overlay c-patten"></div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="experience-list">
+                        <ul>
+                            <li>
+                                <i aria-hidden="true" class="fas fa-minus">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                         class="bi bi-dash" viewBox="0 0 16 16">
+                                        <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/>
+                                    </svg>
+                                </i>
+                                Occaecat velit dis! Exercitationem, eleifend ea wisi.
+                            </li>
+                            <li>
+                                <i aria-hidden="true" class="fas fa-minus">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                         class="bi bi-dash" viewBox="0 0 16 16">
+                                        <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/>
+                                    </svg>
+                                </i>
+                                Aliquam fames laoreet, sapiente beatae modi rem.
+                            </li>
+                            <li>
+                                <i aria-hidden="true" class="fas fa-minus">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                         class="bi bi-dash" viewBox="0 0 16 16">
+                                        <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/>
+                                    </svg>
+                                </i>
+                                Sem justo urna aliquam, rhoncus, libero lectus.
+                            </li>
+                            <li>
+                                <i aria-hidden="true" class="fas fa-minus">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                         class="bi bi-dash" viewBox="0 0 16 16">
+                                        <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/>
+                                    </svg>
+                                </i>
+                                Arcu donec aptent torquent eius, lacinia fugiat.
+                            </li>
+                            <li>
+                                <i aria-hidden="true" class="fas fa-minus">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                         class="bi bi-dash" viewBox="0 0 16 16">
+                                        <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/>
+                                    </svg>
+                                </i>
+                                Adipiscing auctor leo, adipisci etiam, similique expedita.
+                            </li>
+                            <li>
+                                <i aria-hidden="true" class="fas fa-minus">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                         class="bi bi-dash" viewBox="0 0 16 16">
+                                        <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/>
+                                    </svg>
+                                </i>
+                                Dignissimos, dolorem dolorem quod ornare fugit.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="skill-container">
+                        <div class="skill-wrapper">
+                            <p class="skill-titile">Completed Projects</p>
+                            <div class="progress-wrapper">
+                                <div class="ab-progress example progress-inline" data-progress="" data-value="80"><h4
+                                        class="progress-title"></h4>
+                                    <div class="progress-indecator">
+                                        <div class="progress-indecator-inner" style="left: 80%;"><span class="percent">80%</span>
+                                        </div>
+                                    </div>
+                                    <div class="progress-bar-wrap">
+                                        <div class="ab-progress-bar" style="width: 80%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-wrapper">
+                            <p class="skill-titile">Financial Skills</p>
+                            <div class="progress-wrapper">
+                                <div class="ab-progress example progress-inline" data-progress="" data-value="95"><h4
+                                        class="progress-title"></h4>
+                                    <div class="progress-indecator">
+                                        <div class="progress-indecator-inner" style="left: 95%;"><span class="percent">95%</span>
+                                        </div>
+                                    </div>
+                                    <div class="progress-bar-wrap">
+                                        <div class="ab-progress-bar" style="width: 95%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-wrapper">
+                            <p class="skill-titile">Relaible &amp; Hardworking</p>
+                            <div class="progress-wrapper">
+                                <div class="ab-progress example progress-inline" data-progress="" data-value="85"><h4
+                                        class="progress-title"></h4>
+                                    <div class="progress-indecator">
+                                        <div class="progress-indecator-inner" style="left: 85%;"><span class="percent">85%</span>
+                                        </div>
+                                    </div>
+                                    <div class="progress-bar-wrap">
+                                        <div class="ab-progress-bar" style="width: 85%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+
+
+
+<section id="terapi" class="bg-danger-subtle  py-5">
+    <div class="bg-danger-subtle py-5">terapi</div>
+</section>
+
+
+
+<section id="hizmetler" class="ct-section py-5">
+    <div class="ct-section-inner-wrap container my-3 py-5">
+        <div id="new_columns-28-12" class="ct-new-columns">
+
+            <div class="ct-div-block">
+
+                <img id="image-35-12" alt=""
+                     src="https://srpsychologicalservices.com/wp-content/uploads/2024/06/Scroll-Group-2.png"
+                     class="ct-image aos-init aos-animate" srcset=""
+                     sizes="(max-width: 247px) 100vw, 247px"
+                     data-aos="fade-down" data-aos-duration="500"
+                     data-aos-once="true">
+
+                <h4 class="oxy-ou-dual-color-text oxy-ultimate-element aos-init aos-animate" data-aos="fade-up"
+                    data-aos-duration="600" data-aos-once="true">
+                    <span class="oudct-text1">Telethealth</span>
+                    <span class="oudct-text2">Sessions</span>
+                </h4>
+
+                <div class="ct-text-block aos-init aos-animate" data-aos="fade-up"
+                     data-aos-duration="600" data-aos-once="true"> Our telehealth services make it easier for you to
+                    maintain consistency in therapy, regardless of your schedule or location.
+                </div>
+
+            </div>
+
+            <div class="ct-div-block">
+
+                <img id="image-40-12" alt=""
+                     src="assets/Scroll-Group-3.png"
+                     class="ct-image aos-init aos-animate"
+                     sizes="(max-width: 371px) 100vw, 371px">
+
+                <h4 class="oxy-ou-dual-color-text oxy-ultimate-element aos-init aos-animate" data-aos="fade-up"
+                    data-aos-duration="600" data-aos-once="true">
+                    <span class="oudct-text1">Individual</span>
+                    <span class="oudct-text2">Psychotherapy</span>
+                </h4>
+
+                <div class="ct-text-block aos-init aos-animate" data-aos="fade-up"
+                     data-aos-duration="600" data-aos-once="true"> Our core mission is to offer individualized
+                    psychotherapy sessions that cater to the unique needs of each client.
+                </div>
+
+            </div>
+
+            <div class="ct-div-block">
+
+                <img id="image-42-12" alt=""
+                     src="assets/Scroll-Group-4.png"
+                     class="ct-image aos-init aos-animate"
+                     sizes="(max-width: 326px) 100vw, 326px">
+
+                <h4 class="oxy-ou-dual-color-text oxy-ultimate-element aos-init aos-animate" data-aos="fade-up"
+                    data-aos-duration="600" data-aos-once="true">
+                    <span class="oudct-text1">Group</span>
+                    <span class="oudct-text2">Sessions</span>
+                </h4>
+
+                <div class="ct-text-block aos-init aos-animate" data-aos="fade-up"
+                     data-aos-duration="600" data-aos-once="true"> Group therapy can be an effective way to address
+                    specific issues, while also building a sense of community and belonging.
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+<section id="blog" class="bg-primary py-5">
+    <div class="bg-primary py-5">blog</div>
+</section>
+
+<section id="iletisim" class="bg-primary py-5">
+    <div class="bg-primary py-5">iletisim</div>
+</section>
+
+<footer class="py-5 bg-black text-white">
+    <div class="my-5 py-5 bg-black">FOOTER</div>
+    <div class="my-5 py-5 bg-black">FOOTER</div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
