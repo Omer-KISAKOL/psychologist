@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    font-family: clashD-M, sans-serif;
     scrollbar-width: thin;
     scrollbar-color: #044335 white;
 }
@@ -29,6 +30,8 @@ a{
 
 .bg_color_header{
     background-color: #0d352d;
+    width: 101%;
+
 }
 
 .button1{
@@ -57,7 +60,6 @@ a{
     background-color: #044335;
     color: white;
     font-size: 18px;
-    font-weight: 600;
     padding: 10px 24px;
     border-radius: 26px;
     gap: 1rem;
@@ -152,7 +154,9 @@ a{
     z-index: 99 !important;
 }
 
-
+.name_{
+    font-size: 2rem;
+}
 
 /*DESKTOP*/
 .navbar-nav{
@@ -161,7 +165,6 @@ a{
 .navbar_item{
     display: flex;
     align-items: center;
-    font-weight: 600;
     padding: 5px 16px;
     border-radius: 10px;
     color: white;
@@ -176,7 +179,6 @@ a{
 .navbar_item_down{
     display: flex;
     align-items: center;
-    font-weight: 600;
     border-radius: 10px;
 }
 .navbar_item_down:hover{
@@ -184,19 +186,7 @@ a{
     color: white;
     transition: 0.2s;
 }
-.dropdown-menu{
-    transform: translate3d(0, 37.6px, 0px)!important;
-}
-.dropdown-item{
-    color: black;
-    font-weight: 600;
-    transition: all 0.2s ease-in-out;
-}
-.dropdown-item:hover{
-    background-color: #0d352d!important;
-    color: white;
 
-}
 
 
 /*MOBİLE*/
@@ -216,7 +206,6 @@ a{
 }
 .nav-link{
     color: white;
-    font-weight: 600;
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -335,6 +324,7 @@ a{
     opacity: 0.2;
 }
 .team-detail-section .author-bio-date .author-name {
+    font-family: clashD-B, sans-serif;
     color: #111111;
 }
 .team-detail-section .author-bio-date .social-site-link {
@@ -388,9 +378,11 @@ a{
     margin-bottom: 15px;
 }
 .team-detail-section .author-bio-date .author-disc p {
-    color: #414141;
+    font-family: clashD-M, sans-serif;
+    font-size: 1.25rem;
 }
 .team-detail-section .author-bio-date .qualification .qualification-title {
+    font-family: clashD-M, sans-serif;
     margin-top: 0;
     margin-bottom: 30px;
     color: #111111;
@@ -405,7 +397,7 @@ a{
 }
 .team-detail-section .author-bio-date .qualification .experience-detail span {
     color: #414141;
-    font-size: 15px;
+    font-size: 18px;
 }
 .team-detail-section .experience-info .experience-heading {
     color: #111111;
@@ -442,7 +434,6 @@ a{
     display: flex;
     align-items: center;
     line-height: 1.2;
-    font-family: "Poppins", sans-serif;
 }
 .team-detail-section .experience-wrappered .experience-list ul li i {
     color: #044335;
@@ -509,7 +500,7 @@ a{
     grid-template-columns: 1fr 1fr;
     grid-auto-columns: 1fr;
     align-content: start;
-    margin-top: 8em;
+    margin-top: 5em;
     display: grid;
 }
 .content-group {
@@ -609,4 +600,57 @@ a{
     text-align: center;
     font-family: clashD-M, sans-serif;
     color: #044335;
+}
+
+
+
+
+
+
+
+/*İLETİŞİM*/
+
+.form-outline {
+    position: relative;
+    margin-top: 2rem;
+}
+.form-label {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.75rem;
+    padding: 0 0.25rem;
+    pointer-events: none;
+    transition: 0.2s ease all;
+    color: #aaa;
+    background-color: white;
+}
+.form-control {
+    color: #0ea872;
+    border: 2px solid #0ea872;
+    padding: 1rem 0.5rem 0.5rem;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+.form-control:focus + .form-label,
+.form-control:not(:placeholder-shown) + .form-label {
+    top: -0.55rem;
+    left: 0.5rem;
+    font-size: 0.75rem;
+    color: #0ea872;
+}
+.form-control:focus {
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    border-color: #044335;
+    outline: 0;
+    box-shadow: 0 0 0 ;
+}
+.form-check-input:checked {
+    background-color: #044335;
+    border-color: #044335;
+}
+.form-check-input:focus {
+    border-color: #044335;
+    box-shadow: 0 0 0;
 }
