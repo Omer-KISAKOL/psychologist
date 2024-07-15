@@ -590,30 +590,31 @@
 
                                 <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-2 align-self-center">
 
-                                    <form id="registerForm" class="mx-1 mx-md-4" autocomplete="on" novalidate="novalidate">
+                                    <form class="mx-1 mx-md-4" autocomplete="on">
 
                                         <div class="d-flex flex-row align-items-center mb-2">
                                             <div data-mdb-input-init class="form-outline flex-fill mb-0">
-                                                <input type="text" id="registerFormName" class="form-control" />
+                                                <input type="text" id="registerFormName" class="form-control" required/>
                                                 <label class="form-label" for="registerFormName">İsim Soyisim</label>
                                             </div>
                                         </div>
 
                                         <div class="d-flex flex-row align-items-center mb-2">
                                             <div data-mdb-input-init class="form-outline flex-fill mb-0">
-                                                <input type="email" id="registerFormMail" class="form-control" />
+                                                <input type="email" id="registerFormMail" class="form-control" required/>
                                                 <label class="form-label" for="registerFormMail">E-posta</label>
                                             </div>
                                         </div>
+
                                         <div class="d-flex flex-row align-items-center mb-2">
                                             <div data-mdb-input-init class="form-outline flex-fill mb-0">
-                                                <textarea id="registerFormContact" class="form-control" rows="4"></textarea>
+                                                <textarea id="registerFormContact" class="form-control" rows="4" required></textarea>
                                                 <label class="form-label" for="registerFormContact">Mesajınız</label>
                                             </div>
                                         </div>
 
                                         <div class="d-flex justify-content-center mx-4 mt-2 mb-3 mb-lg-4">
-                                            <button  type="submit" class="btn button2">Gönder</button>
+                                            <button  type="submit" value="reset" class="btn button2">Gönder</button>
                                         </div>
 
                                     </form>
