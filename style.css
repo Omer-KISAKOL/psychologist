@@ -654,3 +654,35 @@ a{
     border-color: #044335;
     box-shadow: 0 0 0;
 }
+
+
+/*FOOTER*/
+
+.p2{
+    text-align: left;
+    font-family: clashD-M, sans-serif;
+    font-size: .9em;
+    color: white;
+    opacity: .75;
+}
+.content-group_{
+    z-index: 1;
+    grid-row-gap: .5em;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    position: relative;
+    max-width: 320px;
+}
+
+@media (max-width: 992px) {
+    .content-group_{
+        max-width: 100%;
+        width: 100%;
+        justify-content: center;
+    }
+    .p2{
+        text-align: center;
+    }
+}
