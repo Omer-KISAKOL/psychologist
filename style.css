@@ -659,7 +659,7 @@ a{
 }
 @media (max-width: 450px) {
     .instagram-media {
-        width: 100%!important;
+        width: 95%!important;
     }
 }
 
