@@ -3,5 +3,3 @@ Hakkımda da "Completed Projects" kısmı üzerine konuşulacak.
 Terapi de "Calendly" kısmı üzerine konuşulacak.
 
 Blog yerine yada ayrıca Yorumlar kısmı eklenecek.
-
-First Navbar yapılacak.

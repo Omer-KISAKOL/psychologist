@@ -578,6 +578,20 @@ a{
     opacity: .75;
 }
 
+@media (max-width: 600px) {
+    .content-group {
+        grid-column-gap: .25em;
+        grid-row-gap: .15em;
+    }
+    .subtitle.alt {
+        font-size: 1.275em;
+    }
+    .p1{
+        font-size: .85em;
+    }
+}
+
+
 
 
 /*HİZMETLER*/
@@ -650,11 +664,11 @@ a{
 /*SOCİAL*/
 
 .instagram-media {
-    width: 50% !important;
+    width: 90% !important;
 }
 @media (max-width: 750px) {
     .instagram-media {
-        width: 75%!important;
+        width: 85%!important;
     }
 }
 @media (max-width: 450px) {
@@ -663,6 +677,55 @@ a{
     }
 }
 
+.think-right {
+    padding-top: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+.think-card {
+    background: #fff;
+    border-radius: 30px;
+    padding: 25px;
+    box-shadow: 0 0 34px #9449910d;
+    color: #0a0d2a;
+    max-width: 500px;
+}
+.think-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.think-card-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.think-card-name {
+    font-family: clashD-B, sans-serif;
+    font-size: 1rem;
+}
+.think-card-role {
+    font-size: .75rem;
+}
+.think-card-description {
+    margin-top: 0.25rem;
+    line-height: 25px;
+}
+.stars {
+    color: #0ea872;
+}
+
+.owl-stage{
+    display: flex;
+    align-items: center;
+}
+.owl-item{
+    display: flex;
+    justify-content: center;
+}
 
 
 
