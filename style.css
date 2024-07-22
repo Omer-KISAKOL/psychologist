@@ -26,6 +26,16 @@ a{
 }
 
 
+.go-top {
+    position: fixed;
+    top: 85%;
+    right: 3%;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 0;
+    z-index: 100;
+}
 
 
 /*ABOVE NAVBAR*/
