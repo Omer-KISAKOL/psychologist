@@ -3,6 +3,7 @@
     font-family: clashD-M, sans-serif;
     scrollbar-width: thin;
     scrollbar-color: #044335 #FAEDCD;
+    color: #044335;
 }
 body{
     overflow-x: hidden !important;
@@ -55,6 +56,12 @@ a{
     background-color: transparent;
     color: #25d366;
 }
+.button-wp svg{
+    fill: white;
+}
+.button-wp:hover svg{
+    fill: #25d366;
+}
 
 /*ABOVE NAVBAR*/
 
@@ -88,7 +95,12 @@ a{
 .first_icons:hover{
     color: #DEB68A;
 }
-
+.first_icons svg{
+    fill: white;
+}
+.first_icons:hover svg{
+    fill: #DEB68A;
+}
 
 
 
@@ -330,7 +342,7 @@ a{
 
 
 
-/*TEAM DETAİL*/
+/*ABOUT*/
 
 .team-detail-section {
     padding-bottom: 110px;
@@ -370,7 +382,7 @@ a{
     border-radius: 30px;
 }
 .team-detail-section .author-img-wrapper .auther-quote svg{
-    color: white;
+    fill: white;
 }
 .team-detail-section .author-img-wrapper .auther-quote blockquote {
     text-align: left;
@@ -387,6 +399,7 @@ a{
     font-weight: 500;
     font-style: normal;
     line-height: 1.7;
+    color: #FFFFFF;
 }
 .team-detail-section .author-bio-date {
     padding-left: 36px;
@@ -407,7 +420,7 @@ a{
 }
 .team-detail-section .author-bio-date .author-name {
     font-family: clashD-B, sans-serif;
-    color: #111111;
+    color: #044335;
 }
 .team-detail-section .author-bio-date .social-site-link {
     margin-bottom: 20px;
@@ -447,7 +460,7 @@ a{
 }
 .team-detail-section .author-bio-date .social-site-link ul li a i {
     font-size: 15px;
-    color: #DEB68A;
+    color: #DEB68A !important;
     height: 1em;
     width: 1em;
     position: relative;
@@ -456,8 +469,15 @@ a{
     align-items: center;
     text-align: center;
 }
+.team-detail-section .author-bio-date .social-site-link ul li a i svg{
+    fill: #DEB68A !important;
+}
+.team-detail-section .author-bio-date .social-site-link ul li:hover a i svg{
+    fill: #FFFFFF !important;
+}
 .team-detail-section .author-bio-date .author-disc {
     margin-bottom: 15px;
+    color: #044335;
 }
 .team-detail-section .author-bio-date {
     font-family: clashD-M, sans-serif;
@@ -466,13 +486,14 @@ a{
 
 .author-disc p {
     text-align: justify;
+    color: #044335;
 }
 
 .team-detail-section .author-bio-date .qualification .qualification-title {
     font-family: clashD-M, sans-serif;
     margin-top: 0;
     margin-bottom: 30px;
-    color: #111111;
+    color: #044335;
     text-transform: capitalize;
 }
 .team-detail-section .author-bio-date .qualification .experience-detail {
@@ -483,18 +504,21 @@ a{
     color: #044335;
 }
 .team-detail-section .author-bio-date .qualification .experience-detail span {
-    color: #414141;
+    color: #044335;
     font-size: 18px;
 }
 .team-detail-section .experience-info .experience-heading {
-    color: #111111;
+    color: #044335;
     margin-bottom: 18px;
     margin-top: 40px;
 
 }
 .team-detail-section .experience-info p {
     margin-bottom: 15px;
-    color: #414141;
+    color: #044335;
+}
+.experience-wrappered p{
+    color: #044335;
 }
 .team-detail-section .experience-wrappered {
     display: flex;
@@ -514,7 +538,7 @@ a{
     margin: 0;
 }
 .team-detail-section .experience-wrappered .experience-list ul li {
-    color: #414141;
+    color: #044335;
     padding-bottom: 6px;
     margin-top: 6px;
     vertical-align: middle;
@@ -539,7 +563,7 @@ a{
     margin-bottom: 0;
 }
 .team-detail-section .experience-wrappered .skill-container .skill-wrapper .skill-titile {
-    color: #414141;
+    color: #044335;
     margin-bottom: 5px;
     text-transform: capitalize;
     line-height: 1;
