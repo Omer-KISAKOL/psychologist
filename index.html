@@ -920,25 +920,27 @@
 
                                 <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-2 align-self-center">
 
-                                    <form class="mx-1 mx-md-4" autocomplete="on" >
+                                    <form class="mx-1 mx-md-4" autocomplete="on" action="https://api.web3forms.com/submit" method="POST">
+
+                                        <input type="hidden" name="access_key" value="abce7cfd-aeab-43ed-97ec-769de84ac706">
 
                                         <div class="d-flex flex-row align-items-center mb-2">
                                             <div data-mdb-input-init class="form-outline flex-fill mb-0">
-                                                <input type="text" id="registerFormName" class="form-control" required/>
+                                                <input type="text" id="registerFormName" class="form-control" name="name" required/>
                                                 <label class="form-label" for="registerFormName">İsim Soyisim</label>
                                             </div>
                                         </div>
 
                                         <div class="d-flex flex-row align-items-center mb-2">
                                             <div data-mdb-input-init class="form-outline flex-fill mb-0">
-                                                <input type="email" id="registerFormMail" class="form-control" required/>
+                                                <input type="email" id="registerFormMail" class="form-control" name="email" required/>
                                                 <label class="form-label" for="registerFormMail">E-posta</label>
                                             </div>
                                         </div>
 
                                         <div class="d-flex flex-row align-items-center mb-2">
                                             <div data-mdb-input-init class="form-outline flex-fill mb-0">
-                                                <textarea id="registerFormContact" class="form-control" rows="4" required></textarea>
+                                                <textarea id="registerFormContact" class="form-control" rows="4" name="message" required></textarea>
                                                 <label class="form-label" for="registerFormContact">Mesajınız</label>
                                             </div>
                                         </div>
@@ -1039,7 +1041,6 @@
 <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script defer src="script.js"></script>
-
 <script>
     window.onscroll = function() {myFunction()};
 
