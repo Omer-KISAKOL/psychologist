@@ -39,7 +39,7 @@ a{
     transition: color 0.9s ease;
 }
 .first_:hover .first_info {
-    color: #9C6644;
+    color: #DEB68A;
 }
 
 .first_info_svg{
@@ -47,7 +47,7 @@ a{
     transition: fill 0.9s ease;
 }
 .first_:hover .first_info_svg {
-    fill: #9C6644;
+    fill: #DEB68A;
 }
 
 .min_w{
@@ -58,7 +58,7 @@ a{
     transition: color 0.9s ease;
 }
 .first_icons:hover{
-    color: #9C6644;
+    color: #DEB68A;
 }
 
 
@@ -139,6 +139,7 @@ a{
     -webkit-animation: scale-up-center 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2 alternate-reverse backwards;
     animation: scale-up-center 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2 alternate-reverse backwards;
 }
+
 
 
 @-webkit-keyframes shadow-pop-tl {
@@ -269,6 +270,14 @@ a{
 
 /*HOME*/
 
+.image-section img{
+    transition: 0.3s ease all;
+}
+
+.image-section img:hover{
+    transform: scale(1.1,1.1);
+}
+
 .text-section h1 {
     font-family: clashD-M, sans-serif;
     font-size: 4.5rem;
@@ -282,7 +291,6 @@ a{
     font-size: 1.25em;
     margin-top: 20px;
     color: #044335;
-
 }
 
 @media (max-width: 600px) {
@@ -291,6 +299,7 @@ a{
         font-weight: bold;
     }
 }
+
 
 
 /*TEAM DETAİL*/
