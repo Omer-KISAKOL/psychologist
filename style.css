@@ -37,6 +37,24 @@ a{
     z-index: 100;
 }
 
+.button-wp{
+    display: flex;
+    align-items: center;
+    background-color: #25d366;
+    color: white;
+    font-size: 18px;
+    padding: 4px 24px;
+    border-radius: 50px;
+    text-align: left;
+    gap: 1rem;
+    border: 2px solid #25d366;
+    transition: color 0.4s ease;
+}
+.button-wp:hover{
+    border: 2px solid #25d366;
+    background-color: transparent;
+    color: #25d366;
+}
 
 /*ABOVE NAVBAR*/
 
