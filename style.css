@@ -431,10 +431,15 @@ a{
 .team-detail-section .author-bio-date .author-disc {
     margin-bottom: 15px;
 }
-.team-detail-section .author-bio-date .author-disc p {
+.team-detail-section .author-bio-date {
     font-family: clashD-M, sans-serif;
     font-size: 1.25rem;
 }
+
+.author-disc p {
+    text-align: justify;
+}
+
 .team-detail-section .author-bio-date .qualification .qualification-title {
     font-family: clashD-M, sans-serif;
     margin-top: 0;
