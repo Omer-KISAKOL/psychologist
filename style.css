@@ -342,7 +342,7 @@ a{
     border-radius: 30px;
 }
 .team-detail-section .author-img-wrapper .auther-quote svg{
-    color: rgba(92, 92, 92, 0.67);
+    color: white;
 }
 .team-detail-section .author-img-wrapper .auther-quote blockquote {
     text-align: left;
