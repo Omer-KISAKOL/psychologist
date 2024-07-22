@@ -310,11 +310,44 @@ a{
 
 /*HOME*/
 
-.image-section img{
+.image-section{
+    padding: 0;
+    margin: 0;
+}
+
+.image-section .bg_img1{
+    display: block;
+    width: 250px;
+    height: 350px;
+    border-radius: 18px;
+    background-image: url("assets/4.jpg");
+    background-size: cover;
+    background-position: center;
+    transition: 0.3s ease all;
+}
+.image-section .bg_img2{
+    display: block;
+    width: 250px;
+    height: 350px;
+    border-radius: 18px;
+    background-image: url("assets/5.jpg");
+    background-size: cover;
+    background-position: center;
+    transition: 0.3s ease all;
+    transform: translateY(-32px);
+}
+.image-section .bg_img3{
+    display: block;
+    width: 250px;
+    height: 350px;
+    border-radius: 18px;
+    background-image: url("assets/6.jpg");
+    background-size: cover;
+    background-position: center;
     transition: 0.3s ease all;
 }
 
-.image-section img:hover{
+.image-section span:hover{
     transform: scale(1.1,1.1);
 }
 
@@ -605,6 +638,7 @@ a{
 /*TERAPİ*/
 
 .features-grid {
+    width: 100%;
     grid-column-gap: 3.4375em;
     grid-row-gap: 3.4375em;
     grid-template-rows: auto;
