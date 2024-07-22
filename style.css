@@ -584,10 +584,9 @@ a{
     grid-column-gap: 3.4375em;
     grid-row-gap: 3.4375em;
     grid-template-rows: auto;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-auto-columns: 1fr;
     align-content: start;
-    margin-top: 5em;
     display: grid;
 }
 .content-group {
