@@ -15,15 +15,15 @@ a{
 
 @font-face {
     font-family: clashD-B;
-    src: url("assets/font/ClashDisplay-Bold.ttf");
+    src: url("assets/font/Calibri Bold.ttf");
 }
 @font-face {
     font-family: clashD-M;
-    src: url("assets/font/ClashDisplay-Medium.ttf");
+    src: url("assets/font/Calibri Regular.ttf");
 }
 @font-face {
     font-family: clashD-L;
-    src: url("assets/font/ClashDisplay-Light.ttf");
+    src: url("assets/font/Calibri Light.ttf");
 }
 
 
@@ -317,43 +317,21 @@ a{
 
 .image-section .bg_img1{
     display: block;
-    width: 250px;
-    height: 350px;
+    width: 500px;
+    height: 380px;
     border-radius: 18px;
-    background-image: url("assets/4.jpg");
+    background-image: url("assets/person-2.jpg");
     background-size: cover;
     background-position: center;
     transition: 0.3s ease all;
 }
-.image-section .bg_img2{
-    display: block;
-    width: 250px;
-    height: 350px;
-    border-radius: 18px;
-    background-image: url("assets/5.jpg");
-    background-size: cover;
-    background-position: center;
-    transition: 0.3s ease all;
-    transform: translateY(-32px);
-}
-.image-section .bg_img3{
-    display: block;
-    width: 250px;
-    height: 350px;
-    border-radius: 18px;
-    background-image: url("assets/6.jpg");
-    background-size: cover;
-    background-position: center;
-    transition: 0.3s ease all;
-}
-
 .image-section span:hover{
     transform: scale(1.1,1.1);
 }
 
 .text-section h1 {
     font-family: clashD-M, sans-serif;
-    font-size: 4.5rem;
+    font-size: 5rem;
     color: #044335;
 }
 .text-section .highlight {
@@ -378,7 +356,7 @@ a{
 /*ABOUT*/
 
 .team-detail-section {
-    padding-bottom: 110px;
+    padding-bottom: 30px;
     position: relative;
     z-index: 1;
 }
@@ -398,17 +376,20 @@ a{
 .team-detail-section .author-img-wrapper .team-fig {
     border-radius: 30px;
     overflow: hidden;
+    width: 526px;
+    height: 526px;
+    background-image: url("assets/7.jpg");
+    background-size: cover;
+    background-position: top;
 }
 .team-detail-section .author-img-wrapper .team-fig img {
     width: 100%;
-    object-fit: cover;
-    object-position: center;
 }
 .team-detail-section .author-img-wrapper .auther-quote {
     text-align: left;
     background-color: #9C6644;
     color: white;
-    padding: 30px;
+    padding: 14px;
     margin-top: -60px;
     position: relative;
     z-index: 1;
@@ -555,7 +536,7 @@ a{
 }
 .team-detail-section .experience-wrappered {
     display: flex;
-    padding-top: 20px;
+    padding-top: 40px;
     align-items: center;
     position: relative;
     z-index: 1;
@@ -647,6 +628,11 @@ a{
     align-content: start;
     display: grid;
 }
+@media (max-width: 992px) {
+    .features-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
 .content-group {
     z-index: 1;
     grid-column-gap: 1.25em;
@@ -667,6 +653,22 @@ a{
     align-items: center;
     display: flex;
 }
+.icon-1x1-medium_{
+    width: 4em;
+    height: 2em;
+    color: #044335;
+    flex: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.bi-person-standing{
+    margin-left: -32px;
+}
+.fa-venus-mars{
+    font-size: 34px;
+}
+
 
 .subtitle.alt {
     font-family: clashD-M,sans-serif;
