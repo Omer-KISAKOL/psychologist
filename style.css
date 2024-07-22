@@ -705,6 +705,17 @@ a{
     }
 }
 
+@media (min-width: 1700px) {
+    .col-xxxl-5 {
+        flex: 0 0 auto;
+        width: 41.66666667%;
+    }
+    .col-xxxl-3 {
+        flex: 0 0 auto;
+        width: 25%;
+    }
+}
+
 .think-right {
     padding-top: 20px;
     padding-right: 20px;
