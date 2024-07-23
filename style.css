@@ -827,6 +827,9 @@ a{
         flex: 0 0 auto;
         width: 25%;
     }
+    .mx-xxxl-5{
+        justify-content: space-evenly!important;
+    }
 }
 
 .think-right {
