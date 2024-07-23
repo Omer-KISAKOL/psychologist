@@ -382,6 +382,26 @@ a{
     background-size: cover;
     background-position: top;
 }
+@media (max-width: 1400px) {
+    .team-detail-section .author-img-wrapper .team-fig{
+        width: 451px;
+        height: 500px;
+    }
+}
+@media (max-width: 1200px) {
+    .team-detail-section .author-img-wrapper .team-fig{
+        width: 376px;
+        height: 450px;
+    }
+}
+@media (max-width: 1050px) {
+    .team-detail-section .author-img-wrapper .team-fig{
+        width: 350px;
+        height: 420px;
+    }
+}
+
+
 .team-detail-section .author-img-wrapper .team-fig img {
     width: 100%;
 }
@@ -395,6 +415,22 @@ a{
     z-index: 1;
     border-radius: 30px;
 }
+
+@media (max-width: 992px) {
+    .team-detail-section .author-img-wrapper .team-fig{
+        width: 300px;
+        height: 350px;
+    }
+    .team-detail-section .author-img-wrapper .auther-quote {
+        width: 300px;
+        padding: 8px;
+    }
+    .team-detail-section .author-img-wrapper{
+        display: grid;
+        justify-items: center;
+    }
+}
+
 .team-detail-section .author-img-wrapper .auther-quote svg{
     fill: white;
 }
