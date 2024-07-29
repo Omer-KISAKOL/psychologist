@@ -69,11 +69,11 @@ a{
     background-color: #9C6644;
     width: 101%;
 }
-.first_info{
+.first_info a{
     color: white;
     transition: color 0.9s ease;
 }
-.first_:hover .first_info {
+.first_:hover .first_info a{
     color: #DEB68A;
 }
 
@@ -101,7 +101,9 @@ a{
 .first_icons:hover svg{
     fill: #DEB68A;
 }
-
+.first_icons:hover svg g use{
+    fill: #DEB68A;
+}
 
 
 /*NAVBAR*/
@@ -522,7 +524,13 @@ a{
 .team-detail-section .author-bio-date .social-site-link ul li a i svg{
     fill: #DEB68A !important;
 }
+.team-detail-section .author-bio-date .social-site-link ul li a i svg g use{
+    fill: #DEB68A !important;
+}
 .team-detail-section .author-bio-date .social-site-link ul li:hover a i svg{
+    fill: #FFFFFF !important;
+}
+.team-detail-section .author-bio-date .social-site-link ul li:hover a i svg g use{
     fill: #FFFFFF !important;
 }
 .team-detail-section .author-bio-date .author-disc {
