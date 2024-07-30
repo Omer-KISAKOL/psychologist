@@ -878,17 +878,14 @@ a{
 
 /*SOCİAL*/
 
-.instagram-media {
-    width: 90% !important;
-}
-@media (max-width: 750px) {
-    .instagram-media {
-        width: 85%!important;
+@media (max-width: 600px) {
+    iframe {
+        height: 500px;
     }
 }
 @media (max-width: 450px) {
-    .instagram-media {
-        width: 95%!important;
+    iframe {
+        height: 430px;
     }
 }
 
