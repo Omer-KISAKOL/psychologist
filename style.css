@@ -156,8 +156,8 @@ a{
 .button3{
     display: flex;
     justify-content: space-between;
-    background-color: #9C6644;
-    color: white;
+    background-color: white;
+    color: #044335;
     font-size: 18px;
     padding: 10px 24px;
     border-radius: 26px;
@@ -685,23 +685,28 @@ a{
     border-bottom-right-radius: 26px;
     border-bottom-left-radius: 26px;
 }
-.accordion-button:not(.collapsed) {
-    color: white;
-    background-color: #9C6644;
-    box-shadow: none;
+.accordion-button span{
+    color: #044335;
+    font-size: 18px;
+    text-align: center;
 }
-.accordion-button::before {
-    flex-shrink: 0;
-    width: var(--bs-accordion-btn-icon-width);
-    height: var(--bs-accordion-btn-icon-width);
-    content: "";
-    background-image: var(--bs-accordion-btn-icon);
-    background-repeat: no-repeat;
-    background-size: var(--bs-accordion-btn-icon-width);
+.accordion-button:hover span{
+    color: white!important;
+}
+
+.accordion-button::after {
+    display: none;
+}
+.accordion-button svg{
+    transform: rotate(0deg);
     transition: var(--bs-accordion-btn-icon-transition);
 }
-.accordion-button::after {
-    margin-left: 0 !important;
+.accordion-button:hover svg{
+    fill: white;
+    transition: var(--bs-accordion-btn-icon-transition);
+}
+.accordion-button:not(.collapsed) svg {
+    transform: var(--bs-accordion-btn-icon-transform);
 }
 .accordion-button:focus {
     box-shadow: none !important;
@@ -709,7 +714,16 @@ a{
 .accordion-item {
     border: none!important;
 }
-
+.accordion-button:not(.collapsed) {
+    color: #044335;
+    background-color: white;
+    box-shadow: none;
+}
+.accordion-button:not(.collapsed):hover {
+    color: white;
+    background-color: #9C6644;
+    box-shadow: none;
+}
 
 
 /*TERAPİ*/
