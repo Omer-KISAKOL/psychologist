@@ -155,7 +155,7 @@ a{
 
 .button3{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     background-color: #9C6644;
     color: white;
     font-size: 18px;
@@ -690,8 +690,18 @@ a{
     background-color: #9C6644;
     box-shadow: none;
 }
+.accordion-button::before {
+    flex-shrink: 0;
+    width: var(--bs-accordion-btn-icon-width);
+    height: var(--bs-accordion-btn-icon-width);
+    content: "";
+    background-image: var(--bs-accordion-btn-icon);
+    background-repeat: no-repeat;
+    background-size: var(--bs-accordion-btn-icon-width);
+    transition: var(--bs-accordion-btn-icon-transition);
+}
 .accordion-button::after {
-    display: none;
+    margin-left: 0 !important;
 }
 .accordion-button:focus {
     box-shadow: none !important;
