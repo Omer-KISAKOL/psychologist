@@ -153,6 +153,26 @@ a{
     background-color: #7F5539;
 }
 
+.button3{
+    display: flex;
+    justify-content: center;
+    background-color: #9C6644;
+    color: white;
+    font-size: 18px;
+    padding: 10px 24px;
+    border-radius: 26px;
+    gap: 1rem;
+    border: 2px solid #9C6644;
+    transition: 0.4s ease;
+    position: relative;
+
+}
+.button3:hover{
+    border: 2px solid #7F5539;
+    color: white;
+    background-color: #7F5539;
+}
+
 
 /*ANİMATE*/
 
@@ -656,6 +676,28 @@ a{
     background-color: #9C6644;
     height: 16px;
     border-radius: 0;
+}
+.accordion-item:first-of-type>.accordion-header .accordion-button {
+    border-top-left-radius: 26px;
+    border-top-right-radius: 26px;
+}
+.accordion-item:last-of-type>.accordion-header .accordion-button.collapsed {
+    border-bottom-right-radius: 26px;
+    border-bottom-left-radius: 26px;
+}
+.accordion-button:not(.collapsed) {
+    color: white;
+    background-color: #9C6644;
+    box-shadow: none;
+}
+.accordion-button::after {
+    display: none;
+}
+.accordion-button:focus {
+    box-shadow: none !important;
+}
+.accordion-item {
+    border: none!important;
 }
 
 
